@@ -11,7 +11,7 @@
                             <div class="ml-10 flex items-baseline space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                                 <x-nav-link href="/" :current="request()->is('/')">Home</x-nav-link>
-                                <x-nav-link href="blog" :current="request()->is('blog')">blog</x-nav-link>
+                                <x-nav-link href="post" :current="request()->is('post')">post</x-nav-link>
                                 <x-nav-link href="about" :current="request()->is('about')">about</x-nav-link>
                                 <x-nav-link href="contact" :current="request()->is('contact')">contact</x-nav-link>
                             </div>
@@ -85,8 +85,8 @@
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <a href="/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
                         aria-current="page">Home</a>
-                    <a href="/blog"
-                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Blog</a>
+                    <a href="/post"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">post</a>
                     <a href="/about"
                         class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
                     <a href="/contact"

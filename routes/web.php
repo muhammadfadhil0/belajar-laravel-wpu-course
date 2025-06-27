@@ -19,6 +19,20 @@ Route::get('/contact', function () {
     return view('contact', ['title' => 'Contact Page']);
 });
 
-Route::get('/blog', function () {
-    return view('blog', ['title' => 'Blog Page']);
+Route::get('/post', function () {
+
+    $posts = [
+        [
+            'title' => 'Apa bahaya merokok?',
+            'author' => 'Muhammad Fadhil',
+            'body' => ' Merokok adalah kebiasaan yang mengakar di masyarakat global, sering kali dimulai sebagai bentuk rekreasi atau tekanan sosial. Namun, di balik setiap kepulan asap tersimpan ancaman serius yang secara perlahan namun pasti merusak kesehatan penggunanya, bahkan orang-orang di sekitarnya. Mengenali bahaya ini adalah langkah pertama untuk melindungi diri dan orang-orang terkasih dari dampak buruknya.'
+        ],
+        [
+            'title' => 'belajar koding sejak dini',
+            'author' => 'azzura q',
+            'body' => ' Di era digital yang terus berkembang pesat, kemampuan koding atau pemrograman bukan lagi sekadar keahlian niche. Ia telah menjadi literasi fundamental, layaknya membaca dan menulis, yang membuka gerbang ke berbagai peluang di masa depan. Memperkenalkan dunia koding kepada anak sejak dini bukan hanya tentang menciptakan programer andal, melainkan juga membekali mereka dengan keterampilan berpikir kritis, logis,'
+        ]
+    ];
+
+    return view('post', ['title' => 'Blog Page', 'posts' => $posts]);
 });
